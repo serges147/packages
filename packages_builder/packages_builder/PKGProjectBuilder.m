@@ -1615,6 +1615,11 @@ NSString * const PKGProjectBuilderDefaultScratchFolder=@"/private/tmp";
 		[tOptionsElement addAttribute:tAttribute];
 	}
 	
+	// hostArchitectures
+	
+	tAttribute=[NSXMLNode attributeWithName:@"hostArchitectures" stringValue:@"x86_64,arm64"];
+	[tOptionsElement addAttribute:tAttribute];
+	
 	// customize
 	
 	PKGDistributionProjectPresentationSettings * tPresentationSettings=((PKGDistributionProject *)self.project).presentationSettings;
